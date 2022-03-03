@@ -1,0 +1,5 @@
+> have to change the button place register form
+
+   <div class="progress mb-5">
+              <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #94C52E; border-radius: 30px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>

@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+# Path top section
+--------------------------------------------------------------*/
+#path{
+    margin-top: -60px;
+    
+}
+#path .breadcrumb{
+    border-radius: 0px; 
+    padding: 20px 0;
+}
+#path .breadcrumb a{
+  color: #211F39;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Your details General section
+--------------------------------------------------------------*/
+#ur-details .form-control{
+    border-radius: 0px;
+    height: 55px;
+}
+#ur-details h5{
+    color: #536477;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 0.5s;
+}
+#ur-details .details-body{
+   border-right: 2px solid #F5F7F9;
+   border-left: 2px solid #F5F7F9;
+}
+
+#ur-details .details-footer h5:hover{
+    color: #2e3033;
+}
+#ur-details .details-header{
+   background-color: #477289;
+   color: #EFF2F5;
+}
+#ur-details form .btn-pcode{
+    background-color: #477289;
+    height: 55px;
+    transition: 0.5s;
+    border-radius: 8px;
+    color: #ffff;
+ }
+ #ur-details form .btn-pcode:hover{
+    background-color: #0B5ED7;
+ }
+ #ur-details .details-footer{
+    background-color: #F5F7F9;
+ }
+ 
+
+ 
+
+
+/*--------------------------------------------------------------
+# Choose a day section
+--------------------------------------------------------------*/
+#ur-details #booking .booktime{
+background-color: #F5F7F9;
+   }
+#ur-details #booking .test button{
+     border-radius: 0px;
+     transition: 1s;
+     background-color: #fff;
+     height: 100%;
+     width: 100%;
+     border: 3px #F5F7F9 solid;
+    }
+#ur-details #booking .test h6{
+color:#536477 ;
+font-size: 19px;
+   }
+#ur-details #booking .test .bookdate{
+ color:#858b92 ;
+    }
+#ur-details #booking .test button:hover {
+ 
+background-color: #fff;
+}
+#ur-details #booking .test button:focus {
+  border: 3px solid #4480A0;
+  box-shadow: none;
+  }
+ #ur-details #booking .test i{
+    transition: 1s;
+   font-size: 20px;
+  left: 45%;
+  position: absolute;
+  bottom: -14px;
+    z-index: 999;
+   display: none;
+   color: #4480A0;
+    }
+#ur-details #booking .test #s-box{
+ 
+    left: 46%;
+  bottom: 10px;
+ 
+}
+#ur-details #booking .test button:focus i{
+   
+        display: block;
+    }
+
+ @media (min-width: 768px) {
+        #ur-details #booking a{
+           width: 3%;
+             
+          } 
+       }
+ #ur-details #booking .carousel-control-prev , .carousel-control-next{
+    background-color: #F5F7F9;
+    color: black;
+    opacity: 1;
+    }
+    #ur-details #booking .carousel-control-prev:hover , .carousel-control-next:hover{
+        background-color: #477289;
+        }
+    #ur-details #booking .carousel-control-prev:focus , .carousel-control-next:focus{
+        background-color: #477289;
+        }
+    #ur-details #booking .carousel-control-prev:hover , .carousel-control-next:hover .fas{
+        color: black;
+        }
+    #ur-details #booking .carousel-control-prev:focus , .carousel-control-next:focus .fas{
+          color: #ffff;
+        }
+
+#ur-details #booking .chosendate  h4{
+    color: #536477;
+    font-size: 22px;
+    line-height: 25px;
+}
+#ur-details #booking .chosendate  p{
+    color: #536477;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+/*--------------------------------------------------------------
+# special-items section
+--------------------------------------------------------------*/
+#ur-details #special-items .special-items-image  img{
+    width: 80%;
+}
+@media (max-width: 768px) {
+
+    #ur-details #special-items .special-items-image  img{
+        width: 100%;
+    }
+    #ur-details #special-items .special-items-price  h2{
+        font-size: 20px;
+     }
+    #ur-details #special-items .price-bottom {
+        align-self: end;
+     }
+  }
+#ur-details #special-items .special-items-details  h5{
+    font-weight:700 ;
+    color: #44576B;
+    font-size: 22px;
+}
+#ur-details #special-items .special-items-details  p{
+   font-size: 19px;
+    color: #616b75;
+    line-height: 35px;
+    font-weight: 500;
+}
+#ur-details #special-items .special-items-price  h2{
+   font-weight: bold;
+   color: #44576B;
+}
+
+.special-item-pq form {
+   text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px ;
+ width: fit-content;
+ 
+  }
+  
+ .special-item-pq .value-button {
+    display: inline-block;
+    border-radius: 0px;
+    margin: 0px;
+    width: 20px;
+    font-size: 19px; 
+    text-align: center;
+    
+   font-weight: 700;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+ .special-item-pq .value-button:hover {
+    cursor: pointer;
+  }
+  
+ .special-item-pq form #decrease {
+    margin-right: -4px;
+    
+  }
+  
+ .special-item-pq form #increase {
+    margin-left: -4px;
+    
+  }
+  
+ .special-item-pq form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+ .special-item-pq input#number {
+    text-align: center;
+    border: none;
+  
+   
+    width: 20px;
+    
+  }
+  
+ .special-item-pq input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+
+  #ur-details #special-items .special-item-2  img{
+    width: 75%;
+}
+  @media (max-width: 990px) {
+
+    #ur-details #special-items .special-item-2  img{
+        width: 100%;
+    }
+  }

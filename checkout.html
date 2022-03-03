@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/9664a32a85.js" crossorigin="anonymous"></script>
+  <title>SkpiZilla</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/checkout.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="">
+    <div class="container-fluid px-lg-5 d-flex align-items-center">
+
+
+      <a href="index.html" class="logo me-auto"><img src="assets/img aset/Mask Group 124.png" alt=""
+          class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li><a class="nav-link scrollto" href="#contact"><img src="assets/img aset/Icon feather-shopping-cart.png"
+                class="mr-2" width="25px" alt=""> Cart</a></li>
+          <li><a class="nav-link scrollto" type="button" data-toggle="modal" data-target="#login-model"><img
+                src="assets/img aset/Icon feather-users.png" width="40px" alt=""> </a></li>
+
+        </ul>
+
+
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section class="path" id="path">
+    <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+      <ol class="breadcrumb  px-lg-5 px-3">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+      </ol>
+    </nav>
+  </section>
+
+  <main id="main">
+    <!-- ======= YOUR DETAILS SECTION ======= -->
+    <section id="ur-details">
+      <div class="container">
+        <div class="details-form">
+          <div class="details-header pb-2 pt-3  px-4">
+            <h4>Your Details</h4>
+          </div>
+          <div class="details-body py-5  px-4">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+
+                  <input type="fname" class="form-control" id="inputfname" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+
+                  <input type="lname" class="form-control" id="inputlname" placeholder="Last Name">
+                </div>
+              </div>
+
+              <div class="form-group">
+
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email Address">
+              </div>
+
+              <div class="form-group">
+
+                <input type="email" class="form-control" id="inputconfirmEmail4" placeholder="Confirm Email Address">
+              </div>
+
+              <div class="form-group">
+
+                <input type="text" class="form-control" id="inputTelnumber" placeholder="Telephone Number">
+              </div>
+
+              <h5 class="mt-4 mb-3">Delivery Address</h5>
+
+              <div class="form-row">
+                <div class="form-group col-md-9">
+
+                  <input type="text" class="form-control" id="inputPcode" placeholder="Post Code">
+                </div>
+                <div class="form-group col-md-3">
+
+                  <button type="button" class="btn btn-pcode  w-100 ">Find Address</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address 1">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Address 2">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="city" placeholder="City/Town">
+              </div>
+              <div class="form-group">
+                <label for="Billaddress">
+                  <h5 class="mt-4 mb-2">Billing Address*</h5>
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Same as delivery address
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="details-footer  pb-3 pt-4 text-center">
+            <a href="" type="button">
+              <h5>Next</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End YOUR DETAILS SECTION -->
+
+    <!-- =======Your Waste SECTION ======= -->
+    <section id="ur-details">
+      <div class="container">
+        <div class="details-form">
+          <div class="details-header pb-2 pt-3  px-4">
+            <h4>Your Waste</h4>
+          </div>
+          <div class="details-body py-5  px-4">
+            <form action="">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" style="color: #536477; font-weight: 600; font-size: large;">Please describe your
+                  waste and detail any special requirements </label>
+                <textarea class="form-control mt-2" style="height: 140px; resize: none;" id="exampleFormControlTextarea1"
+                  placeholder="Please enter waste discription.."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="details-footer  pb-3 pt-4 text-center">
+            <a href="" type="button">
+              <h5>Next</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Your Waste SECTION -->
+
+    <!-- ======= special-items SECTION ======= -->
+    <section id="ur-details">
+      <div class="container" id="special-items">
+        <div class="details-form">
+          <div class="details-header pb-2 pt-3  px-4">
+            <h4>Your Waste</h4>
+          </div>
+          <div class="details-body py-5  px-md-5 px-4">
+            <h5 class="mx-md-4  mb-5">You've chosen to book.</h5>
+          <div class="special-item-sec1 mx-md-4">
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="special-items-image">
+                  <img src="assets/img aset/Group 2911.png" class=" " alt="">
+                </div>
+              </div>
+              <div class="col-md-5 col-7">
+                <div class="special-items-details">
+                  <h5>8 Yard skip</h5>
+                  <p class="mt-md-5">Up to the max weight of 400kg. You can add 4 additional items below</p>
+                </div>
+              </div>
+              <div class="col-md-3  col-5 mb-3 mb-md-0 price-bottom ">
+                <div class="special-items-price text-end">
+                  <h2 class="">&#163 75.00</h2>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <hr class="my-5">
+
+          <div class="special-item-sec2 mx-md-4">
+            <h5 class="ml-md-5  mb-4">Will you load any of the following?</h5>
+            <p class="ml-md-5  mb-5" style="color: #536477; font-size: large; font-weight: 500;">Your load (including any item selected below) must fit within the size booked above</p>
+            <div class="row">
+              <div class="col-6   px-md-4 py-3" style="border-right: 1px solid #B6B6B6 ; border-bottom: 1px solid #B6B6B6 ;">
+                <div class="row">
+                  <div class="col-lg-7">
+                   <div class="special-item-2">
+                    <img src="assets/img aset/Mask Group 122.png" class="img-fluid" alt="">
+                    <h5 class="mt-4 ml-md-3 ml-0">LCD Tv</h5>
+                    <p class="text-muted ml-md-3 ml-0">Lorem ipsum dolor sit amet.</p>
+                   </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="special-item-pq">
+                      <form class="ml-auto">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
+                    </div>
+                    <div class="special-items-price mt-lg-5 mt-3 text-end">
+                      <h2 class="">&#163 15.00</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6   px-md-4 py-3"  style="border-left: 1px solid #B6B6B6 ; border-bottom: 1px solid #B6B6B6 ;">
+                <div class="row">
+                  <div class="col-lg-7">
+                   <div class="special-item-2">
+                    <img src="assets/img aset/Mask Group 123.png" class="img-fluid" alt="">
+                    <h5 class="mt-4 ml-md-3 ml-0">Laptop hp</h5>
+                    <p class="text-muted ml-md-3 ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dignissimos quam </p>
+                   </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="special-item-pq">
+                      <form class="ml-auto">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
+                    </div>
+                    <div class="special-items-price mt-lg-5 mt-3 text-end">
+                      <h2 class="">&#163 35.00</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6   px-md-4 py-3" style="border-right: 1px solid #B6B6B6 ; border-top: 1px solid #B6B6B6 ;">
+                <div class="row">
+                  <div class="col-lg-7">
+                   <div class="special-item-2">
+                    <img src="assets/img aset/Mask Group 121.png" class="img-fluid" style="width: 30%;" alt="">
+                    <h5 class="mt-4 ml-md-3 ml-0">iphone 11</h5>
+                    <p class="text-muted ml-md-3 ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dignissimos quam </p>
+                   </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="special-item-pq">
+                      <form class="ml-auto">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
+                    </div>
+                    <div class="special-items-price mt-lg-5 mt-3 text-end">
+                      <h2 class="">&#163 35.00</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6   px-md-4 py-3" style="border-left: 1px solid #B6B6B6 ; border-top: 1px solid #B6B6B6 ;">
+                <div class="row">
+                  <div class="col-lg-7">
+                   <div class="special-item-2">
+                    <img src="assets/img aset/Group 2917.png" class="img-fluid"  alt="">
+                    <h5 class="mt-4 ml-md-3 ml-0">Air conditioner</h5>
+                    <p class="text-muted ml-md-3 ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dignissimos quam </p>
+                   </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="special-item-pq">
+                      <form class="ml-auto">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
+                    </div>
+                    <div class="special-items-price mt-lg-5 mt-3 text-end">
+                      <h2 class="">&#163 35.00</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          </div>
+          <div class="details-footer  pb-3 pt-4 text-center">
+            <a href="" type="button">
+              <h5>Next</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Your Waste SECTION -->
+
+    <!-- =======Access SECTION ======= -->
+    <section id="ur-details">
+      <div class="container">
+        <div class="details-form">
+          <div class="details-header pb-2 pt-3  px-4">
+            <h4>Access</h4>
+          </div>
+          <div class="details-body py-5  px-4">
+            <form action="">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" style="color: #536477; font-weight: 600; font-size: large;">We'll assume direct
+                  access is available unless you tell us otherwise </label>
+                <textarea class="form-control mt-3" style="height: 140px; resize: none;" id="exampleFormControlTextarea1"
+                  placeholder="Please enter a discription.."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="details-footer  pb-3 pt-4 text-center">
+            <a href="" type="button">
+              <h5>Next</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Access SECTION -->
+
+    <!-- =======Choose a day SECTION ======= -->
+    <section id="ur-details">
+      <div class="container" id="booking">
+        <div class="details-form">
+          <div class="details-header pb-2 pt-3  px-4">
+            <h4>Choose a day</h4>
+          </div>
+          <div class="details-body py-5  choose-day">
+            <h5 class="mx-md-4 mx-2 mb-5">You've chosen to book.</h5>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row mx-5 my-3">
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 text-center  my-2 my-lg-0 ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row mx-5 my-3">
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 text-center  my-2 my-lg-0 ">
+                      <div class="test h-100 ">
+                        <button type="button" class="btn btn-outline-primary py-5 ">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center ">
+                      <div class="test h-100">
+                        <button type="button" class="btn btn-outline-primary py-5 disabled">
+                          <h6>Monday</h6>
+                          <div class="bookdate mt-3">
+                            23
+                            <p>November</p>
+                          </div>
+                          <i class="fas fa-check-circle   mx-auto"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fas fa-chevron-left fa-lg"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fas fa-chevron-right fa-lg"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+
+
+
+            </div>
+
+            <div class="booktime bg-light mt-5 mx-md-5 px-5 px-md-0 py-4">
+              <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-2 col-12 my-2 my-lg-0 text-center">
+                  <div class="test h-100 ">
+                    <button type="button" class="btn btn-outline-primary py-5 ">
+                      <h6>Anytime</h6>
+                      <div class="bookdate mt-3">
+                        8am - 8pm
+                        <h6>Free</h6>
+                      </div>
+                      <i class="fas fa-check-circle   mx-auto"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3 col-lg-2 col-12  my-lg-0 px-md-3 px-4 py-4 text-center ">
+                  <div class="test h-100 ">
+                    <button type="button" class="btn btn-outline-primary py-5 ">
+                      <h6>Anytime</h6>
+                      <div class="bookdate mt-3">
+                        8am - 8pm
+                        <h6>Free</h6>
+                      </div>
+                      <i class="fas fa-check-circle mx-auto" id="s-box"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3 col-lg-2 col-12  my-lg-0 px-md-3 px-4 py-4 text-center">
+                  <div class="test h-100 ">
+                    <button type="button" class="btn btn-outline-primary py-5">
+                      <h6>Anytime</h6>
+                      <div class="bookdate mt-3">
+                        8am - 8pm
+                        <h6>Free</h6>
+                      </div>
+                      <i class="fas fa-check-circle mx-auto" id="s-box"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-5 text-center ">
+                  <div class="chosendate mt-5">
+                    <p>Your Chosen Date</p>
+                    <h4>Friday 27th November</h4>
+                  </div>
+                </div>
+                <div class="col-md-5 text-center ">
+                  <div class="chosendate mt-5">
+                    <p>Your Chosen Time</p>
+                    <h4>Pm Free</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="details-footer  pb-3 pt-4 text-center">
+            <a href="" type="button">
+              <h5>Next</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Choose a day SECTION -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="footer-top">
+      <div class="container px-lg-5">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="logo"><img src="assets/img aset/Mask Group 124.png" width="80px" alt=""></div>
+            <ul class="my-3">
+              <li><i class="fa fa-map-marker mr-2" style="color: #94C52E;" aria-hidden="true"></i> <a href="#">Madduvil,
+                  Jaffna.</a></li>
+              <li><i class="fa fa-phone-square mr-2" style="color: #94C52E;" aria-hidden="true"></i><a href="#">+ 77
+                  1234569</a></li>
+
+            </ul>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-lg-4 footer-links">
+            <h4>Category</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Frist link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Second long link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Third link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fourth long link</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-lg-4 footer-links">
+            <h4>Category</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Frist link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Second long link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Third link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fourth long link</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-lg-4 footer-links">
+            <h4>Category</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Frist link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Second long link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Third link</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fourth long link</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2021</span></strong>-All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

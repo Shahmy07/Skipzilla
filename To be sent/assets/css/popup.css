@@ -1,0 +1,45 @@
+.modal {
+   
+  }
+  .modal .modal-dialog {
+    width: 96%;
+    max-width: none;
+    height: 96%;
+    
+  }
+  .modal .modal-content {
+    height: 96%;
+    border: 0;
+    border-radius: 0;
+    background-color: rgba(1, 77, 26, 0.856);
+  }
+  .modal .modal-body {
+   color: white;
+  }
+
+
+
+  #exampleModal .modal-content img{
+    width: 120px;
+  }
+  #exampleModal .modal-content input{
+    width: 250px;
+    height: 60px;
+    background-color: rgb(10, 54, 6);
+    border: 0px;
+    border-radius: 40px;
+  }
+  #exampleModal .modal-content button{
+  background-color: #0B4463;
+  width: 192px;
+  color: white;
+  font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    #exampleModal .modal-content img{
+      width: 70px;
+    }
+    #exampleModal .modal-content h1{
+     font-size: 30px;
+    }
+  }
